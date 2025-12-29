@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 TikTok Downloader</h1>
+    <p class="subtitle">Download video TikTok tanpa watermark</p>
+
+    <form id="download-form">
+      <input type="url" id="url-input" placeholder="Paste link TikTok di sini..." required>
+      <button type="submit">🔍 Cari Video</button>
+    </form>
+
+    <div id="loading" style="display: none;">⏳ Sedang memproses...</div>
+
+    <div id="result" class="result-card" style="display: none;">
+      <div class="video-info">
+        <div class="author">
+          <img id="avatar" src="" alt="Avatar" class="avatar">
+          <div>
+            <h3 id="author-name"></h3>
+            <p>@<span id="username"></span></p>
+          </div>
+        </div>
+
+        <h2 id="title" class="title"></h2>
+
+        <img id="thumbnail" src="" alt="Thumbnail" class="thumbnail">
+
+        <div class="stats">
+          <span>👀 <strong id="views">0</strong></span>
+          <span>❤️ <strong id="likes">0</strong></span>
+          <span>💬 <strong id="comments">0</strong></span>
+        </div>
+
+        <div class="download-options">
+          <h3>Pilih Format Download:</h3>
+          <div id="formats"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="error" class="error" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

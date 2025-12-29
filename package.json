@@ -1,0 +1,14 @@
+{
+  "name": "video-downloader",
+  "version": "1.0.0",
+  "description": "Monolithic video downloader",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "express": "^4.22.1",
+    "node-fetch": "^2.7.0"
+  }
+}
